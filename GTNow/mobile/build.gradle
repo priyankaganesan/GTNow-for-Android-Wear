@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'MyAndroidKey'
+            keyPassword 'android'
+//            storeFile file('C:/Users/Ajay/Keystores/android.jks')
+//            storePassword 'android'
+        }
+    }
+
+/*    signingConfigs {
+        debug {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('C:\\Users\\Stephanie\\.android\\debug.keystore')
+            storePassword 'android'
+        }
+    }*/
+    compileSdkVersion 20
+    buildToolsVersion '20.0.0'
+    defaultConfig {
+        applicationId 'edu.gatech.seclass.GTNow'
+        minSdkVersion 19
+        targetSdkVersion 20
+        versionCode 1
+        versionName '1.0'
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    wearApp project(':wear')
+    compile 'com.google.android.gms:play-services-wearable:+'
+    //compile 'com.google.android.gms:play-services:6.1.+'
+    //compile "com.android.support:support-v4:20.0.+"
+    //wearApp files('C:/Users/Ajay/AndroidStudioProjects/GTNow/wear/build/outputs/apkwear-debug-unaligned.apk')
+    compile files('src/libs/json-simple-1.1.1.jar')
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GTNow</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_event">EventActivity</string>
+    <string name="trouble"><a href="mailto:support@cleverfinger.com.au?Subject=Lost%20Password" target="_top">Trouble Signing In!</a></string>
+    <string name="title_group_list">Groups</string>
+    <string name="title_group_detail">Group Detail</string>
+    <string name="action_refresh">Refresh Group List</string>
+    <string name="title_activity_gtnow_menu">GTNowMenuActivity</string>
+    <string name="title_items_list">Items</string>
+    <string name="title_items_detail">Items Detail</string>
+    <string name="title_activity_group_map">GroupMapActivity</string>
+    <string name="title_activity_group">GroupActivity</string>
+
+</resources>

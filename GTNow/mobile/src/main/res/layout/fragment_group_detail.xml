@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/group_detail"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context="edu.gatech.seclass.GTNow.GroupDetailFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=" "
+        android:id="@+id/group_name"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Start Date"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/group_name"
+        android:layout_alignStart="@+id/group_name"
+        android:layout_marginTop="42dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="End Date"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView6"
+        android:layout_toStartOf="@+id/start_date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=" "
+        android:id="@+id/start_date"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_marginLeft = "50px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=" "
+        android:id="@+id/end_date"
+        android:layout_toEndOf="@+id/group_name"
+        android:layout_below="@+id/start_date"
+        android:layout_alignStart="@+id/start_date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Members:"
+        android:id="@+id/textView10"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/members_list"
+        android:choiceMode="none"
+        android:layout_toEndOf="@+id/group_name"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_alignStart="@+id/end_date" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find My Group"
+        android:id="@+id/findGroupBtn"
+        android:layout_below="@+id/textView9"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginTop="50px"/>
+
+</RelativeLayout>
